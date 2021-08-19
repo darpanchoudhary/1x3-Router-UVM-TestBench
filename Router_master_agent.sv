@@ -29,7 +29,6 @@ function void router_wr_agent::build_phase(uvm_phase phase);
            end
 endfunction
 
-
 function void router_wr_agent::connect_phase(uvm_phase phase);
         if(m_cfg.is_active == UVM_ACTIVE)
           begin
