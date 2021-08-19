@@ -63,6 +63,7 @@ task router_wr_driver::send_to_dut(write_xtn xtn);
               m_cfg.drv_data_count++;
 endtask
 
+                
 function void router_wr_driver::report_phase(uvm_phase phase);
          `uvm_info(get_type_name(), $sformatf("Report: router write driver sent %0d transactions", m_cfg.drv_data_count), UVM_LOW)
 endfunction
