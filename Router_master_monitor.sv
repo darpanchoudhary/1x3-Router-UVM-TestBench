@@ -63,5 +63,6 @@ task router_wr_monitor::collect_data();
                 m_cfg.mon_data_count++; 
                 `uvm_info("ROUTER_WR_MONITOR",$sformatf("printing from monitor \n %s", mon_data.sprint()),UVM_LOW)
                 monitor_port.write(mon_data);   
+                
          end
 endtask
