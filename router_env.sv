@@ -74,7 +74,7 @@ function void router_env::connect_phase(uvm_phase phase);
                  begin
                   foreach(m_cfg.wr_agt_cfg[i])
                         begin
-                                wagt_top.agnth[i].monh.monitor_port.connect(sb.fifo_wrh.analysis_export);
+                                wagt_top.agnth[i].monh.monitor_port.connect(sb.fifo_wrh[i].analysis_export);
                         end
                 end
 
