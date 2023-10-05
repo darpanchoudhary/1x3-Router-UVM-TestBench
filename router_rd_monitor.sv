@@ -18,7 +18,8 @@ endclass
 function router_rd_monitor::new(string name = "router_rd_monitor",uvm_component parent);
         super.new(name,parent);
         monitor_port = new("monitor_port", this); 
-
+endfunction 
+                
 function void router_rd_monitor::build_phase(uvm_phase phase);
          super.build_phase(phase);
          if(!uvm_config_db # (router_rd_agent_config)::get(this,"","router_rd_agent_config",m_cfg)) 
