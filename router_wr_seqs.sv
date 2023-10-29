@@ -49,7 +49,7 @@ task router_wxtns_medium_pkt::body();
            `uvm_fatal(get_type_name(),"getting the config failed,check if set properly")
         req = write_xtn::type_id::create("req"); 
         start_item(req);
-        assert(req.randomize() with header[7:2]inside {[16:30]} && header [1:0]==addr;});
+        assert(req.randomize() with {header[7:2]inside {[16:30]} && header [1:0]==addr;});
         `uvm_info("write_sequence",$formatf("printing from sequence \n %s",req.sprint()),UVM_HIGH)
         finish_item(req);
 endtask
@@ -72,7 +72,7 @@ task router_wxtns_big_pkt::body();
            `uvm_fatal(get_type_name(),"getting the config failed,check if set properly")
         req = write_xtn::type_id::create("req"); 
         start_item(req);
-        assert(req.randomize() with header[7:2]inside {[31:45]} && header [1:0]==addr;});
+        assert(req.randomize() with {header[7:2]inside {[31:45]} && header [1:0]==addr;});
         `uvm_info("write_sequence",$formatf("printing from sequence \n %s",req.sprint()),UVM_HIGH)
         finish_item(req);
 endtask
@@ -96,7 +96,7 @@ task router_wxtns_random_pkt::body();
            `uvm_fatal(get_type_name(),"getting the config failed,check if set properly")
         req = write_xtn::type_id::create("req"); 
         start_item(req);
-        assert(req.randomize() with  header [1:0]==addr;});
+        assert(req.randomize() with  {header [1:0]==addr;});
         `uvm_info("write_sequence",$formatf("printing from sequence \n %s",req.sprint()),UVM_HIGH)
         finish_item(req);
 endtask
