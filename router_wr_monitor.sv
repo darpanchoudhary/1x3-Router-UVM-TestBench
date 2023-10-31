@@ -45,7 +45,7 @@ task router_wr_monitor::collect_data();
         begin
                 mon_data = write_xtn::type_id::create("mon_data");
                 @(vif.wmon_cb);
-                wait (!vif.wmon_cb_busy && vif.wmon_cb.pkt_valid)
+                wait (!vif.wmon_cb.busy && vif.wmon_cb.pkt_valid)
                 mon_data.header = vif.wmon_cb.data_in;
                 mon_data.payload_data = new[mon_data.header[7:2]];
                 @(vif.wmon_cb); 
