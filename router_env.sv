@@ -78,7 +78,7 @@ function void router_env::connect_phase(uvm_phase phase);
                         end
                 end
 
-                if(m_cfg.has_wagent)
+                if(m_cfg.has_ragent)
                  begin
                   foreach(m_cfg.rd_agt_cfg[i])
                         begin
