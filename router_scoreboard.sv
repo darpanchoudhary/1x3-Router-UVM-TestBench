@@ -61,8 +61,6 @@ covergroup router_fcov1;
         CHANNEL_X_PAYLOAD_SIZE : cross CHANNEL,PAYLOAD_SIZE;
   endgroup
 
-endclass
-
 function void router_scoreboard::build_phase(uvm_phase phase);
         super.build_phase(phase);
 
