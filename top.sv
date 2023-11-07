@@ -39,8 +39,7 @@ module top
 
                    run_test();
                 end
-endmodule
-
+        
 property pkt_vld;
         @(posedge clock)
         $rose(in.pkt_valid) |=> in.busy;
