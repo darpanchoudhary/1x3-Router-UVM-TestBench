@@ -4,3 +4,13 @@ Router 1*3 Design Block Diagram
 
 Router UVM Testbench:
 ![IMG_1319](https://github.com/darpanchoudhary/1x3-Router-UVM-TestBench/assets/70278680/5312e453-96e8-4234-98ab-3434c96ce631)
+
+#Router packet structure
+![IMG_1321](https://github.com/darpanchoudhary/1x3-Router-UVM-TestBench/assets/70278680/b2bca0d5-6011-4308-8a71-9ab3eb446d82)
+
+#Router input protocol
+![IMG_1322](https://github.com/darpanchoudhary/1x3-Router-UVM-TestBench/assets/70278680/b7367686-0945-45c4-a6d0-48ad73fa7caa)
+
+#Router output protocol
+![IMG_1323](https://github.com/darpanchoudhary/1x3-Router-UVM-TestBench/assets/70278680/75232234-58c9-46af-9ba4-6448b1246bb9)
+
