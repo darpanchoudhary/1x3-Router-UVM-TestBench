@@ -14,3 +14,8 @@ Router UVM Testbench:
 #Router output protocol
 ![IMG_1323](https://github.com/darpanchoudhary/1x3-Router-UVM-TestBench/assets/70278680/75232234-58c9-46af-9ba4-6448b1246bb9)
 
+Features to be verified:
+  1.Packet should reach all 3 destinations properly as per the channel address.
+  2.All 3 destinations should receive packet of all the possible payload lengths.
+  3.When the data is corrupted,error signal should go high.
+  4.When data out is not read within 30 cycles of valid out going high,soft reset should occur.
